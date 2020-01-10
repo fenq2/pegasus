@@ -140,6 +140,10 @@ body {
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 0.36px;
+        &:hover {
+            transition: .3s;
+            color: #deac8c;
+        }
     }
 }
 .sandwich {
@@ -183,13 +187,6 @@ body {
         background-size: cover;
     }
 }
-.main {
-    height: 2000px;
-    background-image: url(../img/content-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -170px;
-}
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -223,6 +220,11 @@ body {
     }
 }
 .main {
+    background-image: url(../img/content-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -170px;
+    padding-bottom: 50px;
     &-info {
         max-width: 735px;
         margin: 0 auto;
@@ -346,6 +348,132 @@ body {
             transition: .3s;
             background-color: #2f2f2f;
             color: #fff;
+        }
+    }
+}
+.footer {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 30px 0;
+    & .container {
+        display: flex;
+    }
+    &-social {
+        padding-left: 73px;
+        border-left: 1px solid #8c8c8c;
+        max-width: 185px;
+        &__btn {
+            display: block;
+            padding: 8px 0;
+            text-align: center;
+            width: 100%;
+            border-bottom: 2px solid #a6a6a6;
+            color: #a6a6a6;
+            text-decoration: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-family: "Montserrat-Medium";
+            margin-bottom: 16px;
+            &:hover {
+                transition: .3s;
+                color: #fff;
+                border-bottom: 2px solid #fff;
+            }
+        }
+        &__info {
+            box-sizing: border-box;
+            width: 100%;
+            background-color: rgba(255, 255, 255, .15);
+            padding: 13px 17px;
+        }
+    }
+    &-phone {
+        padding-bottom: 8px;
+        &__link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Montserrat-Medium";
+            letter-spacing: -0.33px;
+            &--spacing {
+                letter-spacing: 0.25px;
+            }
+        }
+        &__desc {
+            color: #9a9a9a;
+            font-size: 8px;
+            display: block;
+            text-align: right;
+            font-family: "Montserrat-Medium";
+            text-transform: uppercase;
+        }
+    }
+    &-network {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #9a9a9a;
+            border-radius: 3px;
+            width: 28px;
+            height: 28px;
+            z-index: 1;
+            &:hover {
+                transition: .3s;
+                background-color: #d0aa8c;
+            }
+        }
+    }
+    #footer-network__icon {
+        width: 16px;
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        &__title {
+            position: relative;
+            font-size: 19px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0;
+            padding-bottom: 20px;
+            &:after {
+                position: absolute;
+                content: '';
+                width: 68px;
+                height: 2px;
+                background-color: #d0aa8c;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        &__list {
+            list-style: none;
+            padding: 0 80px 0 0;
+            margin: 30px 0 0 0;
+            &--border {
+                border-right: 1px solid #8c8c8c;
+            }
+        }
+        &__item {
+            padding-bottom: 8px;
+        }
+        &__link {
+            font-size: 15px;
+            font-family: "Montserrat-Regular";
+            color: #a7a6a4;
+            text-decoration: none;
+            &:hover {
+                transition: .3s;
+                color: #fff;
+            }
         }
     }
 }
