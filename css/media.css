@@ -1,0 +1,108 @@
+@media screen and (max-width: 1190px) {
+    .tour-preview__item:nth-child(even) {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1156px) {
+    .tour-preview__item:nth-child(even) {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .header-top {
+        justify-content: space-around;
+    }
+    .header-top__side {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-phone {
+        margin-bottom: 20px;
+    }
+    .header-top__btn {
+        margin-bottom: 20px;
+    }
+    .header .logo {
+        top: 10%;
+    }
+    .main-nav__item:first-child {
+        padding-right: 50px;
+    }
+    .main-nav__item:last-child {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .header-top {
+        justify-content: space-between;
+    }
+    .main-nav__item:first-child {
+        padding-right: 25px;
+    }
+    .main-nav__item:last-child {
+        padding-left: 25px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .header-top {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .header-top:before {
+        width: 40%;
+    }
+    .header-top__btn {
+        margin-left: 0;
+    }
+    .header-top:after {
+        width: 40%;
+    }
+    .header-phone {
+        display: none;
+    }
+    .header .logo {
+        top: -10px;
+    }
+    .header-top__side {
+        padding-top: 20px;
+    }
+    .header .logo {
+        width: 150px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .sandwich {
+        display: block;
+    }
+    .header-bottom {
+        padding: 15px;
+    }
+    .header-bottom .container {
+        display: flex;
+        justify-content: center;
+    }
+    .main-subtitle {
+        font-size: 16px;
+    }
+    .tour-preview__title {
+        font-size: 18px;
+    }
+    .main-title {
+        font-size: 28px;
+        padding: 0 40px;
+    }
+    .main-title:before {
+        width: 30px;
+    }
+    .main-title:after {
+        width: 30px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .header-top__btn {
+        width: 150px;
+        font-size: 12px;
+    }
+}
